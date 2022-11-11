@@ -1,6 +1,6 @@
 package com.lnworks.atchar.common.controller;
 
-import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@Log
+@Log4j2
 @RequestMapping("/admin/accounts")
 public class AdminLoginController {
     @RequestMapping(value = "/login")
